@@ -67,6 +67,9 @@ fi
 S3_URL="https://lang-php.s3.amazonaws.com/dist-${STACK}-${S3_URL:-"master"}"
 RTVS_URL="http://php-runtime-version-selector${RTVS_URL:-}.herokuapp.com"
 
+#cd $CACHE_DIR
+#apt-get download libapache2-mod-php5 php5-gd php5-mcrypt php5-mysql php5-pgsql
+
 cd $BUILD_DIR
 
 if [[ -s "composer.json" ]]; then
